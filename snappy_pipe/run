@@ -1,0 +1,6 @@
+#!/bin/sh
+
+./Allclean
+blockMesh > blockMesh.log
+snappyHexMesh -overwrite > snappyHexMesh.log
+touch snappy_pipe.foam
