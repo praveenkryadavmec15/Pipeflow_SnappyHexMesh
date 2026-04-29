@@ -89,7 +89,7 @@ actions
     {
         name    topPatch;
         type    faceSet;
-        action  new;
+        action  delete;
         source  faceToFace;
         sourceInfo
         {
@@ -106,6 +106,17 @@ actions
         source  faceToFace;
         sourceInfo
         {
+          set cylinder;
+        }
+    }
+
+    {
+        name    wall;
+        type    faceSet;
+        action  delete;
+        source  faceToFace;
+        sourceInfo
+        {
           set bottomPatch;
         }
     }
@@ -113,7 +124,7 @@ actions
     {
         name    wall;
         type    faceSet;
-        action  new;
+        action  delete;
         source  faceToFace;
         sourceInfo
         {
